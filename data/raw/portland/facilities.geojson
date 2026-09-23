@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"name": "facilities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "facility_id": "5793207323", "name": "Rebound Clinic", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.6681042, 45.5315208 ] } },
+{ "type": "Feature", "properties": { "facility_id": "6330129108", "name": "ZoomCare", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.6811673, 45.5302692 ] } },
+{ "type": "Feature", "properties": { "facility_id": "6330195142", "name": "Care Essentials", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.681837, 45.5316676 ] } },
+{ "type": "Feature", "properties": { "facility_id": "6332002080", "name": "Providence Express Care", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.6856311, 45.5302986 ] } },
+{ "type": "Feature", "properties": { "facility_id": "6332483585", "name": "ZoomCare", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.684033, 45.5244715 ] } },
+{ "type": "Feature", "properties": { "facility_id": "6422725708", "name": "Old Town Clinic", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.6781525, 45.5232118 ] } },
+{ "type": "Feature", "properties": { "facility_id": "6773241856", "name": "Multnomah County Health Department", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.6768874, 45.527688 ] } },
+{ "type": "Feature", "properties": { "facility_id": "6776194608", "name": "GoHealth Urgent Care", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.684271, 45.5306484 ] } },
+{ "type": "Feature", "properties": { "facility_id": "7590106933", "name": "Multnomah County STD Clinic", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.6768747, 45.5275971 ] } },
+{ "type": "Feature", "properties": { "facility_id": "7888881840", "name": "ZoomCare", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.698628, 45.534581 ] } },
+{ "type": "Feature", "properties": { "facility_id": "9168335486", "name": "ZoomCare", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.660951, 45.5273937 ] } },
+{ "type": "Feature", "properties": { "facility_id": "9788782470", "name": "Passport Health Portland Travel Clinic", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.683425, 45.518682 ] } },
+{ "type": "Feature", "properties": { "facility_id": "11347574983", "name": "ZoomCare", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.6611546, 45.5241357 ] } },
+{ "type": "Feature", "properties": { "facility_id": "12179709694", "name": "Indian Health Clinic", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.6582792, 45.5368135 ] } },
+{ "type": "Feature", "properties": { "facility_id": "14023053001", "name": "The Eye Group Dispensary", "amenity": "clinic" }, "geometry": { "type": "Point", "coordinates": [ -122.6783311, 45.5116803 ] } }
+]
+}

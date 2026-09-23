@@ -1,0 +1,1 @@
+"""Spatial Graph Benchmark package."""

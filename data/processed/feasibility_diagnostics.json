@@ -1,0 +1,58 @@
+{
+  "network_summary": {
+    "num_nodes": 428,
+    "num_edges": 1051,
+    "total_network_length_km": 101.05,
+    "bridge_edges": 35,
+    "tunnel_edges": 21
+  },
+  "connectivity": {
+    "weakly_connected_components": 1,
+    "largest_wcc_nodes": 428,
+    "largest_wcc_ratio": 1.0,
+    "strongly_connected_components": 29,
+    "largest_scc_nodes": 400,
+    "largest_scc_ratio": 0.9346,
+    "isolated_nodes_degree_0": 0,
+    "source_only_nodes_in_0": 7,
+    "sink_only_nodes_out_0": 7
+  },
+  "degree_distribution": {
+    "mean_in_degree": 2.455607476635514,
+    "max_in_degree": 4,
+    "mean_out_degree": 2.455607476635514,
+    "max_out_degree": 4,
+    "mean_total_degree": 4.911214953271028,
+    "median_total_degree": 5.0
+  },
+  "length_distribution_meters": {
+    "min_length_m": 2.2,
+    "mean_length_m": 96.15,
+    "median_length_m": 94.0,
+    "max_length_m": 627.08,
+    "std_length_m": 62.02
+  },
+  "facility_mapping": {
+    "total_facilities": 19,
+    "mapped_facilities": 19,
+    "unmapped_facilities": 0,
+    "mapping_rate": 1.0,
+    "mean_snap_distance_m": 41.8847381883018,
+    "median_snap_distance_m": 40.82970683665733,
+    "max_snap_distance_m": 61.7338354969527
+  },
+  "highway_classes": {
+    "motorway_link": 19,
+    "motorway": 6,
+    "secondary": 267,
+    "tertiary": 214,
+    "residential": 286,
+    "primary": 202,
+    "unclassified": 24,
+    "living_street": 4,
+    "tertiary_link": 2,
+    "trunk": 25,
+    "trunk_link": 1,
+    "secondary_link": 1
+  }
+}

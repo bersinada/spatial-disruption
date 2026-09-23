@@ -1,0 +1,20 @@
+{
+  "name": "seattle_downtown_prototype",
+  "center_point": [
+    47.6062,
+    -122.3321
+  ],
+  "radius_meters": 1000.0,
+  "facility_tags": {
+    "amenity": [
+      "hospital",
+      "clinic",
+      "fire_station",
+      "police"
+    ]
+  },
+  "num_nodes": 428,
+  "num_edges": 1054,
+  "num_facilities": 19,
+  "osmnx_version": "2.1.1"
+}

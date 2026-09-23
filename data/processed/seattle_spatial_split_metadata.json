@@ -1,0 +1,10 @@
+{
+  "experiment": "E06_secondary_spatial_split",
+  "city": "seattle",
+  "canal_latitude": 47.65,
+  "buffer_meters": 1500.0,
+  "region1_train_nodes": 2221,
+  "region2_test_nodes": 0,
+  "excluded_buffer_nodes": 0,
+  "notes": "Origins in the 1,500m exclusion buffer are completely excluded from both train and test."
+}
