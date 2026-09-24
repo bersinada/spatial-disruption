@@ -52,7 +52,7 @@
 ### Graph Models
 
 - [x] Implement GraphSAGE baseline
-- [ ] Implement relational GNN (CompGCN / RGCN)
+- [x] Implement relational GNN (CompGCN / RGCN)
 - [x] Establish identical evaluation harness
 - [x] Run in-city validation (Seattle Test: ROC-AUC 1.0000, Acc 100%)
 - [x] Run cross-city transfer (Portland Transfer: ROC-AUC 0.9445, PR-AUC 0.9839)

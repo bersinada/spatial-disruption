@@ -1,0 +1,115 @@
+{
+  "experiment_id": "E03_relational_graph_model",
+  "model": "InductiveRelationalGNN",
+  "timestamp_unix": 1790285358,
+  "runtime_seconds": 27.06,
+  "relations": {
+    "num_relations": 3,
+    "mapping": {
+      "0": "connects_to (road corridor)",
+      "1": "accessible_from (junction -> facility)",
+      "2": "serves (facility -> junction)"
+    }
+  },
+  "hyperparameters": {
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "epochs": 60,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "seed": 42,
+    "device": "cuda"
+  },
+  "reachability_classification": {
+    "train": {
+      "roc_auc": 0.9956,
+      "pr_auc": 0.9989,
+      "accuracy": 0.9675,
+      "balanced_accuracy": 0.9171,
+      "precision": 0.9611,
+      "recall": 1.0,
+      "f1": 0.9802,
+      "brier_score": 0.0283,
+      "log_loss": 0.1331,
+      "support_total": 2000,
+      "support_pos": 1608,
+      "support_neg": 392
+    },
+    "val": {
+      "roc_auc": 0.9927,
+      "pr_auc": 0.9978,
+      "accuracy": 0.964,
+      "balanced_accuracy": 0.9211,
+      "precision": 0.9554,
+      "recall": 1.0,
+      "f1": 0.9772,
+      "brier_score": 0.0331,
+      "log_loss": 0.1505,
+      "support_total": 500,
+      "support_pos": 386,
+      "support_neg": 114
+    },
+    "test_in_city": {
+      "roc_auc": 0.969,
+      "pr_auc": 0.9948,
+      "accuracy": 0.966,
+      "balanced_accuracy": 0.8768,
+      "precision": 0.9621,
+      "recall": 1.0,
+      "f1": 0.9807,
+      "brier_score": 0.0324,
+      "log_loss": 0.1499,
+      "support_total": 500,
+      "support_pos": 431,
+      "support_neg": 69
+    },
+    "transfer_cross_city": {
+      "roc_auc": 0.9369,
+      "pr_auc": 0.982,
+      "accuracy": 0.95,
+      "balanced_accuracy": 0.8677,
+      "precision": 0.9419,
+      "recall": 1.0,
+      "f1": 0.9701,
+      "brier_score": 0.0479,
+      "log_loss": 0.1991,
+      "support_total": 1000,
+      "support_pos": 811,
+      "support_neg": 189
+    }
+  },
+  "detour_regression": {
+    "train": {
+      "mae": 0.0354,
+      "median_ae": 0.0319,
+      "rmse": 0.0506,
+      "pearson_r": 0.3007,
+      "spearman_rho": 0.3742,
+      "support_reachable": 1608
+    },
+    "val": {
+      "mae": 0.0318,
+      "median_ae": 0.0318,
+      "rmse": 0.0383,
+      "pearson_r": 0.3183,
+      "spearman_rho": 0.4496,
+      "support_reachable": 386
+    },
+    "test_in_city": {
+      "mae": 0.104,
+      "median_ae": 0.032,
+      "rmse": 0.2476,
+      "pearson_r": -0.0596,
+      "spearman_rho": 0.1299,
+      "support_reachable": 431
+    },
+    "transfer_cross_city": {
+      "mae": 0.0377,
+      "median_ae": 0.0321,
+      "rmse": 0.0565,
+      "pearson_r": 0.1639,
+      "spearman_rho": 0.2939,
+      "support_reachable": 811
+    }
+  }
+}
