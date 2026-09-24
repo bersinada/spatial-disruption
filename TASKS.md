@@ -44,11 +44,10 @@
 ### Baseline
 
 - [x] Lock feature leakage contract (DEC-015)
-
-- [ ] Implement LightGBM baseline
-- [ ] Implement spatial feature extraction
-- [ ] Implement leakage-safe preprocessing (frozen City A normalizers)
-- [ ] Establish baseline metrics
+- [x] Implement LightGBM baseline
+- [x] Implement spatial feature extraction
+- [x] Implement leakage-safe preprocessing (frozen City A normalizers)
+- [x] Establish baseline metrics (ROC-AUC 0.9945 in-city, 0.9794 zero-shot transfer)
 
 ### Graph Models
 

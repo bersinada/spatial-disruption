@@ -1,0 +1,191 @@
+{
+  "experiment_id": "E01_continuous_spatial_baseline",
+  "model": "LightGBM",
+  "timestamp_unix": 1790246712,
+  "runtime_seconds": 1.13,
+  "features": {
+    "count": 36,
+    "names": [
+      "origin_x",
+      "origin_y",
+      "destination_x",
+      "destination_y",
+      "delta_x_m",
+      "delta_y_m",
+      "euclidean_distance_m",
+      "bearing_deg",
+      "original_distance_m",
+      "orig_path_hops",
+      "network_circuity",
+      "orig_avg_edge_length",
+      "facility_is_hospital",
+      "facility_snap_distance_m",
+      "disruption_radius_m",
+      "dist_origin_to_epicenter_m",
+      "dist_dest_to_epicenter_m",
+      "min_dist_od_to_epicenter_m",
+      "max_dist_od_to_epicenter_m",
+      "origin_in_hazard_zone",
+      "dest_in_hazard_zone",
+      "epicenter_to_od_line_dist_m",
+      "hazard_intersects_od_segment",
+      "excess_dist_via_epicenter_m",
+      "origin_street_count",
+      "origin_degree",
+      "origin_in_degree",
+      "origin_out_degree",
+      "destination_street_count",
+      "destination_degree",
+      "destination_in_degree",
+      "destination_out_degree",
+      "h3_origin_node_density_res8",
+      "h3_origin_node_density_res9",
+      "h3_dest_node_density_res8",
+      "h3_dest_node_density_res9"
+    ],
+    "top_10_by_gain": [
+      {
+        "feature": "min_dist_od_to_epicenter_m",
+        "split_importance": 404,
+        "gain_importance": 15802.24
+      },
+      {
+        "feature": "dist_origin_to_epicenter_m",
+        "split_importance": 413,
+        "gain_importance": 1491.12
+      },
+      {
+        "feature": "origin_in_hazard_zone",
+        "split_importance": 117,
+        "gain_importance": 668.05
+      },
+      {
+        "feature": "origin_y",
+        "split_importance": 363,
+        "gain_importance": 603.53
+      },
+      {
+        "feature": "hazard_intersects_od_segment",
+        "split_importance": 19,
+        "gain_importance": 346.2
+      },
+      {
+        "feature": "dist_dest_to_epicenter_m",
+        "split_importance": 76,
+        "gain_importance": 345.36
+      },
+      {
+        "feature": "h3_origin_node_density_res9",
+        "split_importance": 368,
+        "gain_importance": 293.54
+      },
+      {
+        "feature": "disruption_radius_m",
+        "split_importance": 161,
+        "gain_importance": 265.99
+      },
+      {
+        "feature": "orig_avg_edge_length",
+        "split_importance": 166,
+        "gain_importance": 93.05
+      },
+      {
+        "feature": "origin_x",
+        "split_importance": 178,
+        "gain_importance": 78.56
+      }
+    ]
+  },
+  "reachability_classification": {
+    "train": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "brier_score": 0.0,
+      "log_loss": 0.0003,
+      "support_total": 2000,
+      "support_pos": 1608,
+      "support_neg": 392
+    },
+    "val": {
+      "roc_auc": 0.9998,
+      "pr_auc": 0.9999,
+      "accuracy": 0.984,
+      "balanced_accuracy": 0.9896,
+      "precision": 1.0,
+      "recall": 0.9793,
+      "f1": 0.9895,
+      "brier_score": 0.0103,
+      "log_loss": 0.0294,
+      "support_total": 500,
+      "support_pos": 386,
+      "support_neg": 114
+    },
+    "test_in_city": {
+      "roc_auc": 0.9945,
+      "pr_auc": 0.9991,
+      "accuracy": 0.952,
+      "balanced_accuracy": 0.8261,
+      "precision": 0.9473,
+      "recall": 1.0,
+      "f1": 0.9729,
+      "brier_score": 0.0456,
+      "log_loss": 0.2451,
+      "support_total": 500,
+      "support_pos": 431,
+      "support_neg": 69
+    },
+    "transfer_cross_city": {
+      "roc_auc": 0.9794,
+      "pr_auc": 0.9952,
+      "accuracy": 0.95,
+      "balanced_accuracy": 0.888,
+      "precision": 0.9524,
+      "recall": 0.9877,
+      "f1": 0.9697,
+      "brier_score": 0.0447,
+      "log_loss": 0.1736,
+      "support_total": 1000,
+      "support_pos": 811,
+      "support_neg": 189
+    }
+  },
+  "detour_regression": {
+    "train": {
+      "mae": 0.0083,
+      "median_ae": 0.001,
+      "rmse": 0.023,
+      "pearson_r": 0.8946,
+      "spearman_rho": 0.826,
+      "support_reachable": 1608
+    },
+    "val": {
+      "mae": 0.0131,
+      "median_ae": 0.0012,
+      "rmse": 0.0285,
+      "pearson_r": 0.6028,
+      "spearman_rho": 0.7201,
+      "support_reachable": 386
+    },
+    "test_in_city": {
+      "mae": 0.0847,
+      "median_ae": 0.0042,
+      "rmse": 0.2327,
+      "pearson_r": 0.4672,
+      "spearman_rho": 0.7639,
+      "support_reachable": 431
+    },
+    "transfer_cross_city": {
+      "mae": 0.0243,
+      "median_ae": 0.002,
+      "rmse": 0.0513,
+      "pearson_r": 0.4656,
+      "spearman_rho": 0.7506,
+      "support_reachable": 811
+    }
+  }
+}
