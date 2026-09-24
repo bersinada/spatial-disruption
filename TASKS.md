@@ -59,7 +59,7 @@
 
 ### Ablations
 
-- [ ] Relation semantics ablation
+- [x] Relation semantics ablation
 - [ ] Geometry/coordinate ablation
 - [ ] Message-passing depth ablation
 - [ ] Disruption severity evaluation (E07)

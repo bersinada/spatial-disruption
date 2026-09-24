@@ -1,0 +1,104 @@
+{
+  "experiment_id": "E04_relation_semantics_ablation",
+  "model": "InductiveRelationalGNN_GenericAblation",
+  "timestamp_unix": 1790287104,
+  "runtime_seconds": 34.81,
+  "ablation": {
+    "type": "relation_semantics_ablation",
+    "control": "E03_full_relational_3_relations",
+    "treatment": "E04_generic_single_relation",
+    "num_relations": 1
+  },
+  "reachability_classification": {
+    "train": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "accuracy": 0.999,
+      "balanced_accuracy": 0.9974,
+      "precision": 0.9988,
+      "recall": 1.0,
+      "f1": 0.9994,
+      "brier_score": 0.0009,
+      "log_loss": 0.0044,
+      "support_total": 2000,
+      "support_pos": 1608,
+      "support_neg": 392
+    },
+    "val": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "accuracy": 0.964,
+      "balanced_accuracy": 0.9211,
+      "precision": 0.9554,
+      "recall": 1.0,
+      "f1": 0.9772,
+      "brier_score": 0.0322,
+      "log_loss": 0.1079,
+      "support_total": 500,
+      "support_pos": 386,
+      "support_neg": 114
+    },
+    "test_in_city": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "accuracy": 0.966,
+      "balanced_accuracy": 0.8768,
+      "precision": 0.9621,
+      "recall": 1.0,
+      "f1": 0.9807,
+      "brier_score": 0.0337,
+      "log_loss": 0.1913,
+      "support_total": 500,
+      "support_pos": 431,
+      "support_neg": 69
+    },
+    "transfer_cross_city": {
+      "roc_auc": 0.9133,
+      "pr_auc": 0.966,
+      "accuracy": 0.95,
+      "balanced_accuracy": 0.8677,
+      "precision": 0.9419,
+      "recall": 1.0,
+      "f1": 0.9701,
+      "brier_score": 0.0428,
+      "log_loss": 0.2616,
+      "support_total": 1000,
+      "support_pos": 811,
+      "support_neg": 189
+    }
+  },
+  "detour_regression": {
+    "train": {
+      "mae": 0.0187,
+      "median_ae": 0.0007,
+      "rmse": 0.052,
+      "pearson_r": 0.2637,
+      "spearman_rho": 0.5457,
+      "support_reachable": 1608
+    },
+    "val": {
+      "mae": 0.0102,
+      "median_ae": 0.0007,
+      "rmse": 0.0328,
+      "pearson_r": 0.2417,
+      "spearman_rho": 0.5408,
+      "support_reachable": 386
+    },
+    "test_in_city": {
+      "mae": 0.0947,
+      "median_ae": 0.0007,
+      "rmse": 0.2573,
+      "pearson_r": -0.0015,
+      "spearman_rho": 0.203,
+      "support_reachable": 431
+    },
+    "transfer_cross_city": {
+      "mae": 0.0208,
+      "median_ae": 0.0007,
+      "rmse": 0.0588,
+      "pearson_r": 0.0701,
+      "spearman_rho": 0.2678,
+      "support_reachable": 811
+    }
+  }
+}
