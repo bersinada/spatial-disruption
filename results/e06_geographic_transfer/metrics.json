@@ -1,0 +1,279 @@
+{
+  "experiment_id": "E06_geographic_transfer",
+  "timestamp_unix": 1790340843,
+  "runtime_seconds": 5.71,
+  "primary_transfer_benchmark": {
+    "E01 LightGBM (Continuous Spatial)": {
+      "in_city_test": {
+        "roc_auc": 0.9998,
+        "pr_auc": 1.0,
+        "accuracy": 0.952,
+        "balanced_accuracy": 0.8261,
+        "f1": 0.9729,
+        "brier_score": 0.0479,
+        "ece": 0.0479,
+        "detour_pearson_r": 0.4672,
+        "detour_spearman_rho": 0.7639,
+        "detour_mae": 0.0847,
+        "detour_rmse": 0.2327
+      },
+      "zero_shot_transfer": {
+        "roc_auc": 0.9389,
+        "pr_auc": 0.9796,
+        "accuracy": 0.847,
+        "balanced_accuracy": 0.8286,
+        "f1": 0.901,
+        "brier_score": 0.1453,
+        "ece": 0.1484,
+        "detour_pearson_r": 0.4656,
+        "detour_spearman_rho": 0.7506,
+        "detour_mae": 0.0243,
+        "detour_rmse": 0.0513
+      },
+      "degradation_delta": {
+        "delta_roc_auc": -0.0609,
+        "delta_pr_auc": -0.0204,
+        "delta_ece": 0.1005,
+        "delta_detour_r": -0.0016
+      }
+    },
+    "E02 GraphSAGE (Homogeneous Graph)": {
+      "in_city_test": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "f1": 1.0,
+        "brier_score": 0.0,
+        "ece": 0.0024,
+        "detour_pearson_r": -0.0586,
+        "detour_spearman_rho": 0.2262,
+        "detour_mae": 0.0947,
+        "detour_rmse": 0.2573
+      },
+      "zero_shot_transfer": {
+        "roc_auc": 0.9445,
+        "pr_auc": 0.9839,
+        "accuracy": 0.95,
+        "balanced_accuracy": 0.8677,
+        "f1": 0.9701,
+        "brier_score": 0.0435,
+        "ece": 0.0431,
+        "detour_pearson_r": 0.1337,
+        "detour_spearman_rho": 0.3271,
+        "detour_mae": 0.0208,
+        "detour_rmse": 0.0588
+      },
+      "degradation_delta": {
+        "delta_roc_auc": -0.0555,
+        "delta_pr_auc": -0.0161,
+        "delta_ece": 0.0407,
+        "delta_detour_r": 0.1923
+      }
+    },
+    "E03 Relational GNN (Typed Relations)": {
+      "in_city_test": {
+        "roc_auc": 0.969,
+        "pr_auc": 0.9948,
+        "accuracy": 0.966,
+        "balanced_accuracy": 0.8768,
+        "f1": 0.9807,
+        "brier_score": 0.0324,
+        "ece": 0.0461,
+        "detour_pearson_r": -0.0596,
+        "detour_spearman_rho": 0.1299,
+        "detour_mae": 0.104,
+        "detour_rmse": 0.2476
+      },
+      "zero_shot_transfer": {
+        "roc_auc": 0.9369,
+        "pr_auc": 0.982,
+        "accuracy": 0.95,
+        "balanced_accuracy": 0.8677,
+        "f1": 0.9701,
+        "brier_score": 0.0479,
+        "ece": 0.034,
+        "detour_pearson_r": 0.1639,
+        "detour_spearman_rho": 0.2939,
+        "detour_mae": 0.0377,
+        "detour_rmse": 0.0565
+      },
+      "degradation_delta": {
+        "delta_roc_auc": -0.0321,
+        "delta_pr_auc": -0.0128,
+        "delta_ece": -0.0121,
+        "delta_detour_r": 0.2235
+      }
+    },
+    "E04 Generic Edge (Relation Ablated)": {
+      "in_city_test": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 0.966,
+        "balanced_accuracy": 0.8768,
+        "f1": 0.9807,
+        "brier_score": 0.0337,
+        "ece": 0.033,
+        "detour_pearson_r": -0.0015,
+        "detour_spearman_rho": 0.203,
+        "detour_mae": 0.0947,
+        "detour_rmse": 0.2573
+      },
+      "zero_shot_transfer": {
+        "roc_auc": 0.9133,
+        "pr_auc": 0.966,
+        "accuracy": 0.95,
+        "balanced_accuracy": 0.8677,
+        "f1": 0.9701,
+        "brier_score": 0.0428,
+        "ece": 0.0442,
+        "detour_pearson_r": 0.0701,
+        "detour_spearman_rho": 0.2678,
+        "detour_mae": 0.0208,
+        "detour_rmse": 0.0588
+      },
+      "degradation_delta": {
+        "delta_roc_auc": -0.0867,
+        "delta_pr_auc": -0.034,
+        "delta_ece": 0.0112,
+        "delta_detour_r": 0.0716
+      }
+    },
+    "E05 Pure Topology (Geometry Ablated)": {
+      "in_city_test": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "f1": 1.0,
+        "brier_score": 0.0,
+        "ece": 0.0025,
+        "detour_pearson_r": -0.0034,
+        "detour_spearman_rho": 0.1407,
+        "detour_mae": 0.0947,
+        "detour_rmse": 0.2574
+      },
+      "zero_shot_transfer": {
+        "roc_auc": 0.9028,
+        "pr_auc": 0.9632,
+        "accuracy": 0.953,
+        "balanced_accuracy": 0.8757,
+        "f1": 0.9718,
+        "brier_score": 0.0464,
+        "ece": 0.0447,
+        "detour_pearson_r": -0.0502,
+        "detour_spearman_rho": 0.1258,
+        "detour_mae": 0.0208,
+        "detour_rmse": 0.0588
+      },
+      "degradation_delta": {
+        "delta_roc_auc": -0.0972,
+        "delta_pr_auc": -0.0368,
+        "delta_ece": 0.0422,
+        "delta_detour_r": -0.0468
+      }
+    }
+  },
+  "stratified_transfer_accuracy": {
+    "by_sample_type": {
+      "lgb_correct": {
+        "active_core": 0.842,
+        "control_context": 0.852
+      },
+      "sage_correct": {
+        "active_core": 0.9,
+        "control_context": 1.0
+      },
+      "rgcn_correct": {
+        "active_core": 0.9,
+        "control_context": 1.0
+      },
+      "e05_correct": {
+        "active_core": 0.906,
+        "control_context": 1.0
+      }
+    },
+    "by_distance_tier": {
+      "lgb_correct": {
+        "long": 0.8393574297188755,
+        "medium": 0.846441947565543,
+        "short": 0.8638297872340426
+      },
+      "sage_correct": {
+        "long": 0.9257028112449799,
+        "medium": 0.9625468164794008,
+        "short": 0.9872340425531915
+      },
+      "rgcn_correct": {
+        "long": 0.9257028112449799,
+        "medium": 0.9625468164794008,
+        "short": 0.9872340425531915
+      },
+      "e05_correct": {
+        "long": 0.9317269076305221,
+        "medium": 0.9625468164794008,
+        "short": 0.9872340425531915
+      }
+    },
+    "by_facility_amenity": {
+      "lgb_correct": {
+        "clinic": 0.847
+      },
+      "sage_correct": {
+        "clinic": 0.95
+      },
+      "rgcn_correct": {
+        "clinic": 0.95
+      },
+      "e05_correct": {
+        "clinic": 0.953
+      }
+    },
+    "by_disruption_radius_m": {
+      "lgb_correct": {
+        "125.0": 0.965,
+        "150.0": 0.82,
+        "175.0": 0.76,
+        "200.0": 0.855,
+        "225.0": 0.85,
+        "250.0": 0.82
+      },
+      "sage_correct": {
+        "125.0": 1.0,
+        "150.0": 0.98,
+        "175.0": 0.88,
+        "200.0": 0.905,
+        "225.0": 1.0,
+        "250.0": 0.97
+      },
+      "rgcn_correct": {
+        "125.0": 1.0,
+        "150.0": 0.98,
+        "175.0": 0.88,
+        "200.0": 0.905,
+        "225.0": 1.0,
+        "250.0": 0.97
+      },
+      "e05_correct": {
+        "125.0": 1.0,
+        "150.0": 0.98,
+        "175.0": 0.88,
+        "200.0": 0.92,
+        "225.0": 1.0,
+        "250.0": 0.97
+      }
+    }
+  },
+  "e06b_secondary_within_city_transfer": {
+    "train_region": "Seattle South (Region 1)",
+    "test_region": "Seattle North (Region 2)",
+    "train_samples": 969,
+    "test_samples": 1386,
+    "excluded_buffer_samples": 645,
+    "lightgbm_spatial_test": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "ece": 0.0015
+    }
+  }
+}
