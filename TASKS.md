@@ -60,7 +60,7 @@
 ### Ablations
 
 - [x] Relation semantics ablation
-- [ ] Geometry/coordinate ablation
+- [x] Geometry/coordinate ablation
 - [ ] Message-passing depth ablation
 - [ ] Disruption severity evaluation (E07)
 - [ ] Secondary geographic spatial split evaluation
@@ -79,7 +79,7 @@
 - [ ] Analyze cross-city degradation
 - [ ] Analyze failure cases
 - [ ] Determine whether relational semantics provide additional signal
-- [ ] Determine whether topology generalizes without coordinates
+- [x] Determine whether topology generalizes without coordinates
 
 ### Publication
 

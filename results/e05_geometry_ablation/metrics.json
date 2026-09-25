@@ -1,0 +1,176 @@
+{
+  "experiment_id": "E05_geometry_ablation",
+  "timestamp_unix": 1790338919,
+  "runtime_seconds": 26.71,
+  "ablation": {
+    "type": "geometry_ablation",
+    "control_gnn": "E03_full_relational_with_geometry",
+    "treatment_gnn": "E05_relational_pure_topology_no_geometry",
+    "control_tabular": "E01_lightgbm_with_geometry",
+    "treatment_tabular": "E05_lightgbm_no_geometry"
+  },
+  "rgcn_no_geometry": {
+    "train": {
+      "reachability": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "brier_score": 0.0001,
+        "log_loss": 0.0029,
+        "support_total": 2000,
+        "support_pos": 1608,
+        "support_neg": 392
+      },
+      "detour": {
+        "mae": 0.0187,
+        "median_ae": 0.0006,
+        "rmse": 0.052,
+        "pearson_r": 0.1145,
+        "spearman_rho": 0.1754,
+        "support_reachable": 1608
+      }
+    },
+    "val": {
+      "reachability": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "brier_score": 0.0,
+        "log_loss": 0.0024,
+        "support_total": 500,
+        "support_pos": 386,
+        "support_neg": 114
+      },
+      "detour": {
+        "mae": 0.0102,
+        "median_ae": 0.0006,
+        "rmse": 0.0328,
+        "pearson_r": 0.2834,
+        "spearman_rho": 0.322,
+        "support_reachable": 386
+      }
+    },
+    "test": {
+      "reachability": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "brier_score": 0.0,
+        "log_loss": 0.0025,
+        "support_total": 500,
+        "support_pos": 431,
+        "support_neg": 69
+      },
+      "detour": {
+        "mae": 0.0947,
+        "median_ae": 0.0007,
+        "rmse": 0.2574,
+        "pearson_r": -0.0034,
+        "spearman_rho": 0.1407,
+        "support_reachable": 431
+      }
+    },
+    "transfer": {
+      "reachability": {
+        "roc_auc": 0.9028,
+        "pr_auc": 0.9632,
+        "accuracy": 0.953,
+        "balanced_accuracy": 0.8757,
+        "precision": 0.9452,
+        "recall": 1.0,
+        "f1": 0.9718,
+        "brier_score": 0.0464,
+        "log_loss": 0.2713,
+        "support_total": 1000,
+        "support_pos": 811,
+        "support_neg": 189
+      },
+      "detour": {
+        "mae": 0.0208,
+        "median_ae": 0.0007,
+        "rmse": 0.0588,
+        "pearson_r": -0.0502,
+        "spearman_rho": 0.1258,
+        "support_reachable": 811
+      }
+    }
+  },
+  "lightgbm_no_geometry": {
+    "train": {
+      "reachability": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "accuracy": 0.998,
+        "balanced_accuracy": 0.9978,
+        "f1": 0.9988,
+        "brier_score": 0.0042
+      },
+      "detour": {
+        "pearson_r": 0.9322,
+        "spearman_rho": 0.6524,
+        "mae": 0.0097,
+        "rmse": 0.0205
+      }
+    },
+    "val": {
+      "reachability": {
+        "roc_auc": 0.5468,
+        "pr_auc": 0.826,
+        "accuracy": 0.736,
+        "balanced_accuracy": 0.4798,
+        "f1": 0.8476,
+        "brier_score": 0.2321
+      },
+      "detour": {
+        "pearson_r": 0.0882,
+        "spearman_rho": 0.159,
+        "mae": 0.0186,
+        "rmse": 0.0384
+      }
+    },
+    "test": {
+      "reachability": {
+        "roc_auc": 0.7508,
+        "pr_auc": 0.9442,
+        "accuracy": 0.834,
+        "balanced_accuracy": 0.502,
+        "f1": 0.9089,
+        "brier_score": 0.1396
+      },
+      "detour": {
+        "pearson_r": 0.0328,
+        "spearman_rho": 0.0201,
+        "mae": 0.0984,
+        "rmse": 0.2533
+      }
+    },
+    "transfer": {
+      "reachability": {
+        "roc_auc": 0.63,
+        "pr_auc": 0.8508,
+        "accuracy": 0.807,
+        "balanced_accuracy": 0.5178,
+        "f1": 0.892,
+        "brier_score": 0.1701
+      },
+      "detour": {
+        "pearson_r": 0.0441,
+        "spearman_rho": 0.1027,
+        "mae": 0.03,
+        "rmse": 0.0586
+      }
+    }
+  }
+}
